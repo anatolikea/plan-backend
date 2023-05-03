@@ -1,0 +1,9 @@
+@startuml "plan_components"
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+System_Boundary(plan_system, "[[Order planning]]") {
+    Container(plan_backend, "Plan backend", "Java", "Plans the picking of an order", $sprite="java")
+    ContainerDb(plan_db, "Plan Database", "Postgres", "", $sprite="postgresql")
+}
+
+@enduml

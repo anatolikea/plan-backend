@@ -1,0 +1,6 @@
+@startuml "plan_relations"
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+Rel(plan_backend, plan_db, "Stores information for planning")
+
+@enduml
